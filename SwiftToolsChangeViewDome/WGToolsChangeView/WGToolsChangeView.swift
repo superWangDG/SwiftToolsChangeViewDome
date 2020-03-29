@@ -17,7 +17,6 @@ class WGToolsChangeView:UIView {
             self.fontSumWidth = 0
             for index in 0 ..< self.itemValues.count {
                 let rootView = UIButton(type: .custom)
-//                rootView.frame = CGRect
                 rootView.setTitle(self.itemValues[index], for: .normal)
                 rootView.titleLabel?.font = UIFont.systemFont(ofSize: 15)
                 let sizeWidth = self.sizeWithText(text: NSString(string: self.itemValues[index]), font: UIFont.systemFont(ofSize: 15), size: CGSize(width: 100, height: self.mFrame.height))
